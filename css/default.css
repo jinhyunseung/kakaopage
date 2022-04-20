@@ -1,0 +1,21 @@
+/* 태그초기화 */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+ul,li{
+    list-style: none;
+}
+img{
+    display: block;
+    width : 100%;
+    border: 0;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+}

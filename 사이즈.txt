@@ -1,0 +1,4 @@
+pc ~1440px
+laptop 1439px ~ 1024px
+tab 1023px ~ 767px
+m 766px ~

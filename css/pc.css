@@ -1,0 +1,438 @@
+/* pc ~1440px => 반응형 문법 걸기 */
+@media all and (min-width:1440px) {
+    /* pc에서 보여질 스타일 내용 */
+
+    #wrap {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #align_wrap {
+        width: 1296px;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    /* header start */
+    header {
+        width: 100%;
+        height: 72px;
+    }
+
+    #logo {
+        width: 74px;
+        height: 24px;
+        font-size: 20px;
+        background-color: white;
+        padding-top: 24px;
+        /* 72 - 24 = 48 
+        여백 위아래 48/2 => 24 */
+        float: left;
+    }
+
+    /* header>ul{
+        width : 450.42px;
+        height: 72px;
+        background-color: cadetblue;
+    } */
+    header ul {
+        width: 450.42px;
+        height: 72px;
+        margin: 0 auto;
+    }
+
+    /* 텍스트의 갯수가 다를 때 메뉴 만들기 */
+    header ul>li {
+        /* 부모의 값 450.42px; */
+        /* 44.17 +  29.45 + 91.92 + 77.2 = 242.74*/
+        /* 207.68/8 = 25.96px */
+        /* 1. 왼쪽정렬 
+            2. 폰트속성 지정
+            3. 크기값 확인*/
+        float: left;
+        padding: 0 25.96px;
+        text-align: center;
+        line-height: 72px;
+    }
+
+    #right_menubox {
+        float: right;
+        width: 128px;
+        height: 36px;
+        margin-top: -54px;
+        /* 부모크기 72 / 내크기36 / 남는크기 36 + 18 = -54 */
+    }
+
+    .right_in_menu {
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
+        float: left;
+        margin-right: 10px;
+        border: 0;
+    }
+
+    .right_in_menu:nth-child(3) {
+        margin-right: 0;
+    }
+
+    /* 본문영역 */
+    section {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 150px;
+
+    }
+
+    /* 본문1 */
+    #arti_1 {
+        width: 100%;
+        height: 228px;
+        padding-top: 96px;
+    }
+
+    #arti_1 h1 {
+        font-size: 46px;
+    }
+
+    /* 본문2 */
+    #arti_2 {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #arti_2_left {
+        width: 630px;
+        height: 618px;
+        border-radius: 14px;
+        background-color: white;
+        box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+        float: left;
+    }
+
+    #arti_2_top {
+        width: 100%;
+        overflow: hidden;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #arti_2_1 {
+        height: 36px;
+        line-height: 36px;
+    }
+
+    #arti_2_2 {
+        height: 70px;
+        padding: 20px 0;
+        font-size: 20px;
+    }
+
+    #arti_2_3 {
+        height: 20px;
+        margin-top: 20px;
+        font-weight: 100;
+    }
+
+    #arti_2_bot {
+        height: 392px;
+        background-color: #fae100;
+        border-bottom-left-radius: 14px;
+        border-bottom-right-radius: 14px;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 392px;
+        text-align: center;
+    }
+
+    #arti_2_mid {
+        width: 297px;
+        height: 420px;
+        background-color: white;
+        box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+        border-radius: 14px;
+        float: left;
+        margin-left: 36px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #arti_2_mid_1 {
+        height: 36px;
+        line-height: 36px;
+    }
+
+    #arti_2_mid_2 {
+        height: 35px;
+        padding: 15px 0;
+        font-size: 18px;
+    }
+
+    #arti_2_mid_3 {
+        height: 20px;
+        margin-top: 20px;
+        font-weight: 100;
+    }
+
+    #arti_2_right {
+        width: 297px;
+        height: 420px;
+        float: right;
+    }
+
+    #kospi,
+    #promise {
+        width: 100%;
+        height: 192px;
+        box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+        border-radius: 14px;
+        background-color: white;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    #promise {
+        margin-top: 36px;
+    }
+
+    #kospi_1,
+    #promise_1 {
+        height: 36px;
+        line-height: 36px;
+    }
+
+    #kospi_2 {
+        height: 35px;
+        padding: 15px 0;
+        font-size: 23px;
+    }
+
+    #kospi_3,
+    #promise_3 {
+        height: 20px;
+        margin-top: 20px;
+        font-weight: 100;
+    }
+
+    #promise_2 {
+        height: 38px;
+        padding: 15px 0;
+        font-size: 18px;
+    }
+
+    /* 본문영역3 */
+    #arti_3 {
+        width: 100%;
+        overflow: hidden;
+        margin: 36px 0;
+        box-sizing: border-box;
+    }
+
+    #arti_3_top {
+        width: 100%;
+        border-radius: 14px;
+        background-color: white;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+        padding-top: 54px;
+    }
+
+    #arti_3_top>h1 {
+        font-size: 42px;
+    }
+
+    #arti_3_but {
+        padding: 10px 30px;
+        background-color: #333;
+        color: white;
+        border-radius: 25px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    #arti_3_img {
+        width: 900px;
+        height: 240px;
+        margin: 60px auto;
+    }
+
+    #arti_3_bot {
+        width: 100%;
+        height: 192px;
+        margin-top: 36px;
+    }
+
+    .arti_3_inbox {
+        width: 297px;
+        height: 192px;
+        background-color: white;
+        box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+        border-radius: 14px;
+        float: left;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .arti_3_inbox h1 {
+        font-size: 18px;
+    }
+
+
+    .arti_3_inbox1 {
+        height: 36px;
+        line-height: 36px;
+    }
+
+    .arti_3_inbox2 {
+        height: 20px;
+        margin-top: 20px;
+        font-weight: 100;
+    }
+    .arti_3_span>span{
+        padding: 5px 15px;
+        background-color: #eee;
+        border-radius: 15px;
+
+    }
+    .arti_3_inbox:nth-child(1) {
+        margin-right: 36px;
+    }
+
+    #arti_3_servicebox {
+        background-color: #fae100;
+        border-radius: 15px;
+        margin-top: 15px;
+        padding: 10px;
+    }
+
+    #arti_4 {
+        width: 100%;
+        height: 360px;
+        margin-top: 36px;
+    }
+
+    #arti_4_left {
+        width: 630px;
+        height: 360px;
+        border-radius: 14px;
+        background-color: #fae100;
+        padding: 20px;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    #arti_4_left>h1,
+    #arti_4_right>h1 {
+        font-size: 32px;
+    }
+
+    #service_but {
+        padding: 10px 30px;
+        background-color: #333;
+        color: white;
+        border-radius: 30px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    #arti_4_right {
+        width: 630px;
+        height: 360px;
+        border-radius: 14px;
+        background-color: #3c64ff;
+        padding: 20px;
+        box-sizing: border-box;
+        float: right;
+    }
+
+    #human_but {
+        padding: 10px 30px;
+        background-color: #333;
+        color: white;
+        border-radius: 30px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    #kakao_news {
+        width: 260px;
+        height: 60px;
+        background-color: #eee;
+        display: block;
+        border-radius: 50px;
+        text-align: center;
+        line-height: 60px;
+        margin: 50px auto;
+    }
+
+    /* footer start */
+    footer {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 20px;
+    }
+
+    #top_footer {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .footer_topmenu {
+        width: calc(100% / 6);
+        float: left;
+    }
+
+    .footer_topmenu>li {
+        line-height: 50px;
+    }
+
+    .footer_topmenu>li:nth-child(1) {
+        font-weight: 900;
+    }
+
+    #bot_footer {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 50px;
+    }
+
+    #bot_leftfooter {
+        width: 892px;
+        overflow: hidden;
+        float: left;
+    }
+
+    #bot_footer_menu {
+        width: 100%;
+        height: 19px;
+    }
+
+    #bot_footer_menu>li {
+        float: left;
+        width: calc(100% / 9);
+        height: 19px;
+        font-size: 13px;
+        font-weight: 100;
+    }
+
+    #copyright {
+        width: 100%;
+        height: 20px;
+    }
+
+    #bot_rightfooter {
+        width: 150px;
+        height: 20px;
+        float: right;
+    }
+    #m_menu_box{
+        display: none;
+    }
+
+
+    /* media query end */
+}
